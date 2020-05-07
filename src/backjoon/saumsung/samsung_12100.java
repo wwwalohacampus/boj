@@ -11,7 +11,7 @@ public class samsung_12100 {
 	
 	static int N;
 	static int[][] MAT;
-	static int Answer = 0;
+	static int Answer = Integer.MIN_VALUE;
 	
 	public static void main(String[] args) {
 		// 입력
@@ -30,6 +30,8 @@ public class samsung_12100 {
 		}
 		
 		System.out.println(Answer);
+		
+		sc.close();
 	}
 	
 	public static void dfs(int depth, int d, int[][] MAT) {
